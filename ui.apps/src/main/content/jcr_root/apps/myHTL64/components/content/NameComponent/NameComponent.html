@@ -1,7 +1,7 @@
-<sly>
+<div>
     <p>This is name component , Please set the value of firstname,middlename,lastname using dialog to display</p>
 <div data-sly-test.firstname="${properties.firstname}">
-<p>First Name : ${properties.firstname}</p>
+<p>First Name : ${properties.firstname @context='html'}</p>
 </div>
     <div data-sly-test.middlename="${properties.middlename}">
            <p> Middle Name : ${properties.middlename}</p>
@@ -9,4 +9,6 @@
         <div data-sly-test.lastname="${properties.lastname}">
              <p>Last Name : ${properties.lastname}</p>
         </div>
+
+    </div>
 </sly>

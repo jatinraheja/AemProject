@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items
+            jcr:primaryType="nt:unstructured">
+           <column
+                   jcr:primaryType="nt:unstructured"
+                   sling:resourceType="granite/ui/components/coral/foundation/container">
+               <items
+                       jcr:primaryType="nt:unstructured">
+                   <firstName
+                       jcr:primaryType="nt:unstructured"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                       fieldLabel="FirstName"
+                       name="./firstName"/>
+                   <lastName
+                           jcr:primaryType="nt:unstructured"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                           fieldLabel="LastName"
+                           name="./lastName"/>
+                   <highestQualification
+                           jcr:primaryType="nt:unstructured"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                           fieldLabel="HighestQualification"
+                           name="./highestQualification"/>
+                   <age
+                           jcr:primaryType="nt:unstructured"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                           fieldLabel="Age"
+                           name="./age"/>
+                   <radioGroup jcr:primaryType="nt:unstructured"
+                               name="./selected"
+                               text="Select an option"
+                               sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup">
+                       <items jcr:primaryType="nt:unstructured">
+                           <radioMale jcr:primaryType="nt:unstructured"
+                                      text="Male"
+                                      value="Male"/>
+                           <radioFemale jcr:primaryType="nt:unstructured"
+                                        text="Female"
+                                        value="Female"/>
+                       </items>
+                   </radioGroup>
+               </items>
+           </column>
+        </items>
+    </content>
+</jcr:root>
+
+
+
+
+
+
+
+
+
+
+
+
+

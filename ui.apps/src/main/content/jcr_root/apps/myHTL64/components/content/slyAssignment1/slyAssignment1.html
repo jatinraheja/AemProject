@@ -1,0 +1,28 @@
+
+
+<body onload="myFunction()">
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='assignment'}"></sly>
+
+
+<table class="tableBody">
+    <tr>
+        <th> First Name </th>
+        <th> Last Name </th>
+        <th> Highest Qualification </th>
+        <th> Age </th>
+        <th> Gender </th>
+    </tr>
+    <tr>
+        <td>${properties.firstName}</td>
+        <td>${properties.lastName}</td>
+        <td>${properties.highestQualification}</td>
+        <td>${properties.age}</td>
+        <td>${properties.selected}</td>
+    </tr>
+</table>
+
+
+</body>
+
+

@@ -1,0 +1,23 @@
+.redColor
+{
+     color : red;
+}
+.blueColor
+{
+    color:blue;
+}   
+.textColor
+{
+    color : pink;
+}   
+
+.tableBody
+{
+   width:100%;
+
+}  
+table,tr,th
+{
+    border : 1px solid black;
+    border-collapse : collapse;
+}   

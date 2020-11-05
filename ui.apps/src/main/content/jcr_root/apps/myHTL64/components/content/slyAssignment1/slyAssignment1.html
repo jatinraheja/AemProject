@@ -1,14 +1,15 @@
 <body>
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
-     data-sly-call="${clientlib.all @ categories='assignment2'}"/>
+     data-sly-call="${clientlib.all @ categories='assignment2'}"
+/>
 <p> This is sly </p>
 
 <sly data-sly-test.class1= "${properties.selected == 'Male' ? 'blueColor' : 'redColor'}" />
 <div class="${class1}">
     <table class="tableBody">
         <tr>
-            <th> First Name </th>
-            <th> Last Name </th>
+            <th class="text2a"> First Name </th>
+            <th class="text2b"> Last Name </th>
             <th> Highest Qualification </th>
             <th> Age </th>
             <th> Gender </th>

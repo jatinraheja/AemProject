@@ -1,0 +1,17 @@
+<sly data-sly-test.prop = "${properties.text}"></sly>
+<sly data-sly-test="${!wcmmode.edit && !prop}">
+    <p> This component is not authored</p>
+</sly>
+<sly data-sly-test="${wcmmode.edit && !prop}">
+<div class="cq-placeholder cq-marker-start" data-emptytext="Multifield"></div>
+</sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='multiFieldClientLib'}"/>
+
+  <div data-sly-list.child="${properties.text}">
+      <p data-sly-test.spanClass="${childList.odd ? 'greenColor' : 'blueColor'}">
+          <span class="${spanClass}">${child}</span>
+      </p>
+  </div>
+</body>
+

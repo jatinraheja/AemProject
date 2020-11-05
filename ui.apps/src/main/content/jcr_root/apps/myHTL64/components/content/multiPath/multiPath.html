@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<sly data-sly-test.path="${properties.path}"></sly>
+<sly data-sly-test="${!wcmmode.edit && !path}">
+    <p> This component is not authored</p>
+</sly>
+<sly data-sly-test="${wcmmode.edit && !path}">
+    <div class="cq-placeholder cq-marker-start" data-emptytext="MultiPath"></div>
+</sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='multiPathClientLib'}"/>
+  <h4> Path field Links - </h4>
+          <div  data-sly-list.child="${properties.path}">
+              <p> Path- <a class="linkColor">${child}</a></p>
+          </div>
+</body>
+</html>
